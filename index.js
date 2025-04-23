@@ -61,6 +61,12 @@ app.post("/api/volunteer", async (req, res) => {
   }
 });
 
+
+app.get("/api/test", (req, res) => {
+  res.json({ message: "✅ Server is working perfectly!" });
+});
+
+
 // 📌 Route: Submit Donation Form
 app.post("/api/donation", async (req, res) => {
   try {
